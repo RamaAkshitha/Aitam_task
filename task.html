@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Problem Statement: User Registration Form
+    Design and implement a User Registration Form using HTML that collects personal details, preferences,
+     and feedback from the user. The form must use various input types and elements to ensure proper data
+      collection and provide a seamless experience. The task should demonstrate your understanding of HTML 
+      form elements, their attributes, and their functionality. -->
+    <h1>User Registration Form</h1>
+    <fieldset>
+        <legend>User Registration</legend>
+    <form>
+        <fieldset>
+            <legend>personal information</legend>
+                    <td><label for="name">Name:</label></td>
+                    <td></td><input type="text" name="name" placeholder="enter your name"><br><br></td>
+                    <td></td><label for="name">Father Name:</label></td>
+                    <td></td><input type="text" name="name" placeholder="enter your Father name"><br><br></td>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="abc@xyz.com"><br><br>
+                    <label for="number">Phone Number:</label></td>
+                    <input type="text" name="number" placeholder="9999999999"><br><br>
+                    <label for="gender">Select your gender:</label>
+                    <input type="radio" name="gender" id="">male
+                    <input type="radio" name="gender" id="">female
+                    <input type="radio" name="gender" id="">other<br><br>
+                
+                    <label for="add">Address:</label>
+                    <textarea rows="7" column="7" placeholder="enter your address"></textarea><br><br>
+               
+                    <label for="date">Date of birth:</label></td>
+                    <input type="date" name="date" id="" placeholder="Enter your date of birth"><br><br>
+            
+        </fieldset><br><br>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="clg">Select your college:</label><br><br>
+            <select name="clg" style="width: 150px;">
+                <option></option>
+                <option>AITAM</option>
+                <option>GMR</option>
+                <option>GITAM</option>
+            </select><br><br>
+            <label for="clg">Specifications:</label><br><br>
+            <input type="checkbox" name="" id="">Computer science<br>
+            <input type="checkbox" name="" id="">Information Technology<br>
+            <input type="checkbox" name="" id="">Web Development<br>
+            <input type="checkbox" name="" id="">AI<br><br>
+            <label for="profile">Upload Your Profile Photo:</label><br><br>
+        <input type="file" name="profile" id="">
+        </fieldset><br>
+        <fieldset>
+            <legend>preferences</legend>
+            <label for="loc">Location:</label>
+            <input type="radio" name="loc" id="">Hyderabad
+            <input type="radio" name="loc" id="">Bengaluru
+            <input type="radio" name="loc" id="">Chennai<br><br>
+            <label for="msg">Notification:</label><br><br>
+            <input type="checkbox" name="msg" id="">Email Updates<br>
+            <input type="checkbox" name="msg" id=""> SMS Alerts<br>
+            <input type="checkbox" name="msg" id="">Promotions Only<br>
+        </fieldset><br><br>
+        <input type="submit" value="Submit" style="width: 130px; height: 2rem;">&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="reset form" style="width: 130px; height: 2rem;">
+    </form>
+</fieldset>
+</body>
+</html>
