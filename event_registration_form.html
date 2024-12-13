@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h2>Event Registration Form</h2>
+    <fieldset >
+        <legend>Personal Details</legend><br>
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Enter Your Name" required><br><br>
+            <label for="number">Contact Number</label>
+            <input type="tel" name="number" placeholder="Enter Your Mobile Number" required><br><br>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="ex:abc@xyz.com" required><br><br>
+            <!-- <label for="dob">Date Of Birth</label>
+            <input type="date" name="dob" placeholder="Enter Date Of Birth"><br><br> -->
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Other<br><br>
+            <label for="add">Address</label><br>
+            <textarea rows="10" column="10"></textarea>
+        </fieldset><br>
+        <fieldset>
+            <legend>Residency Details</legend><br>
+            <label for="ch">Are you a Day Scholar or Hosteller?</label><br><br>
+            <input type="radio" name="ch">Day Scholar
+            <input type="radio" name="ch">Hosteller<br><br>
+            <label for="hostel">Hostel Name:</label>
+            <input type="text" id="hostel" name="hostel" placeholder="Enter your hostel name"><br><br>
+            <label for="room">Room Number:</label>
+        <input type="text" name="room" placeholder="Enter your room number"><br><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Event Preferences</legend><br>
+            <label for="Category">Category</label>
+            <select name="Category" style="width: 150px;">
+                <option></option>
+                <option>Technical</option>
+                <option>Cultural</option>
+                <option>Sports</option>
+                <option >Arts</option>
+            </select><br><br>
+            <label for="name">Are you participating</label>
+            <input type="radio" name="name">Team
+            <input type="radio" name="name">Individual<br><br>
+            <label for="name">Team Name</label>
+            <input type="text" name="name" placeholder="Enter Team Name"><br><br>
+            <label for="name">Team Members</label>
+            <textarea name="name"></textarea><br><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Pass Collection</legend><br>
+            <label for="name">Upload ID Proof</label><br><br>
+            <input type="file" name="name">
+            <label for="name">Preferred Method of Pass Collection</label>
+            <input type="radio" name="name">Physical
+            <input type="radio" name="name">Digital
+        </fieldset>
+        <br><br>
+        <input type="submit" value="Submit" style="width: 130px; height: 2rem;">&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="reset form" style="width: 130px; height: 2rem;">
+        </form>
+</body>
+</html>
