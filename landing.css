@@ -4,8 +4,10 @@
     padding: 0;
 }
 .land{
-    background: url("mountain3.jpg");
+     background-image: url("mountain3.jpg");
     background-size: cover;
+    background-repeat: no-repeat; 
+    /* background: url("mountain3.jpg")  ; */
     height: 100vh;
     text-align: center;
 }
@@ -26,8 +28,8 @@ button{
     border-radius: 15px;
     border: none;
     cursor: pointer;
-    background-color: #6A372D;
-    color: aliceblue;
+    background-color: rgba(106, 55, 45,0.7);
+    color: rgb(206, 225, 241);
     
 }
 button:hover{
