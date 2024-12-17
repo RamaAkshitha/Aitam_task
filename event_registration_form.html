@@ -8,6 +8,11 @@
 <body>
     <form>
         <h2>Event Registration Form</h2>
+        <h4>Event Name:</h4><p>Avishkar</p>
+        <p><b>About The Event</b>:The college event is a fun and exciting gathering where students can learn new things, show their talents, and meet others. It includes 
+            activities like performances, competitions, and sessions to share ideas and connect with friends.</p>
+        <h4>Date & Time:</h4></p>15-03-2025
+        <h4>Venue:</h4></p>Aditya instiute of technology and management<br><br>
     <fieldset >
         <legend>Personal Details</legend><br>
             <label for="name">Name</label>
@@ -24,17 +29,29 @@
             <textarea rows="10" column="10"></textarea>
         </fieldset><br>
         <fieldset>
-            <legend>Residency Details</legend><br>
+            <legend>Accommodation Details:</legend><br>
             <label for="ch">Are you a Day Scholar or Hosteller?</label><br><br>
             <input type="radio" name="ch">Day Scholar
             <input type="radio" name="ch">Hosteller<br><br>
-            <label for="hostel">Hostel Name:</label>
-            <input type="text" id="hostel" name="hostel" placeholder="Enter your hostel name"><br><br>
-            <label for="room">Room Number:</label>
-        <input type="text" name="room" placeholder="Enter your room number"><br><br>
+            <fieldset>
+                <legend>Day Scholar</legend>
+                <label for="add">Residential Address:</label>
+                <input type="text" name="add" placeholder="Address"><br>
+                <label for="travel">Daily Travel Mode:</label>
+                <input type="checkbox" name="travel">Bus
+                <input type="checkbox" name="travel">Train
+                <input type="checkbox" name="travel">Other
+            </fieldset><br>
+            <fieldset>
+                <legend>Hosteller</legend>
+                <label for="hostel">Hostel Name:</label>
+                <input type="text" id="hostel" name="hostel" placeholder="Enter your hostel name"><br><br>
+                <label for="room">Room Number:</label>
+                <input type="text" name="room" placeholder="Enter your room number"><br><br>
+            </fieldset>
         </fieldset><br>
         <fieldset>
-            <legend>Event Preferences</legend><br>
+            <legend>Event Specific Details:</legend><br>
             <label for="Category">Category</label>
             <select name="Category" style="width: 150px;">
                 <option></option>
@@ -52,12 +69,17 @@
             <textarea name="name"></textarea><br><br>
         </fieldset><br>
         <fieldset>
-            <legend>Pass Collection</legend><br>
+            <legend>Payment</legend><br>
+            <label for="name">Preferred Method of Payment</label>
+            <input type="radio" name="name">Online
+            <input type="radio" name="name">Cash
             <label for="name">Upload ID Proof</label><br><br>
             <input type="file" name="name"><br><br>
-            <label for="name">Preferred Method of Pass Collection</label>
-            <input type="radio" name="name">Physical
-            <input type="radio" name="name">Digital
+        </fieldset><br>
+        <fieldset>
+            <legend>Acknowledgment</legend>
+            <input type="checkbox">I confrim that the information provided is accurate<br>
+            <input type="checkbox">I agree to follow all the rules and guidlines
         </fieldset>
         <br><br>
         <input type="submit" value="Submit" style="width: 130px; height: 2rem;">&nbsp;&nbsp;&nbsp;

@@ -1,0 +1,37 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.land{
+    background: url("mountain3.jpg");
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+.land h1{
+    padding-top: 13rem;
+    color: #6A372D;
+    font-family: Arial, Helvetica, sans-serif
+}
+.land p{
+    padding-top: 0.5rem;
+    color: #221817;
+    padding-bottom: 1rem;
+    font-style: italic;
+
+}
+button{
+    padding: 9px 15px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: #6A372D;
+    color: aliceblue;
+    
+}
+button:hover{
+    background-color: #651e10;
+}
+
+
