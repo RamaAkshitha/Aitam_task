@@ -7,7 +7,7 @@
      background-image: url("mountain3.jpg");
     background-size: cover;
     background-repeat: no-repeat; 
-    /* background: url("mountain3.jpg")  ; */
+    /* background: url("mountain3.jpg") cover no-repeat ; */
     height: 100vh;
     text-align: center;
 }
