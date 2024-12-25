@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+   .container{
+    width: 400px;
+    height: 500px;
+    background-color: antiquewhite;
+    justify-self: center;
+    display: grid;
+     grid-template-columns: repeat(3,200px);/*   repeat(column no.,size)   200px 200px 100px 100px 100px;*/
+    grid-template-rows: repeat(3,100px); 
+    /*grid-template-columns: repeat(2,1fr);  repeat(column no. , fraction)
+    grid-template-rows: repeat(3,1fr);*/
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 2rem;
+}  
+
+.box1{
+    background-color: rgb(175, 138, 138);
+     grid-column-start: 1;
+    grid-column-end: 3; 
+    /* justify-self: center;
+    align-self: center;
+    width: 50px; height: 50px; */
+}
+.box2{
+    background-color: rgb(174, 122, 122);
+     grid-row-start: 2;
+    grid-row-end: 6; 
+
+}
+.box3{
+    background-color: rgb(160, 96, 96);
+     grid-column-start: 2;
+    grid-column-end: 3; 
+
+
+}
+.box4{
+    background-color: rgb(163, 67, 67);
+     grid-column-start: 2;
+    grid-column-end: 3; 
+
+
+}
+.box5{
+    background-color: rgb(96, 46, 46);
+     grid-row-start: 2;
+    grid-row-end: 4; 
+
+
+}
+.box6{
+    background-color: rgb(106, 18, 18);
+    grid-column-start: 1;
+    grid-column-end: 3; 
+
+}
+</style>
+<body>
+    <div class="container">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+    </div>
+</body>
+</html>

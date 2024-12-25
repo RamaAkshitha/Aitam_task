@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #221817;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+}
+.logo{
+    color: white;
+    font-size: 25px;
+}
+.logo:hover{
+    color:  #AD5728;
+    cursor: pointer;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu a{
+    text-decoration: none;
+    margin-left: 2rem;
+    color: white;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.8s ease;
+}
+.menu a:hover{
+    border-bottom: 2px solid  #AD5728;
+    color:  #AD5728;
+} 
+.btn a{
+    display: flex;
+    padding: 10px 14px;
+    color: white;
+    background-color: #AD5728;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 4rem;
+}
+.btn a:hover{
+    font-size: 15px;
+    background-color: #7F3326;
+    padding: 10.2px 14.2px;
+}
+#home{
+    background-image: url("music.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#home h1{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+#home p{
+    color:#832D29;
+    margin-bottom: 15px;
+}
+#home button{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 3rem;
+    border: none;
+    font-size: 13px;
+    background-color: #AD5728; color: white;
+}
+#home button:hover{
+    width: 6.5rem;
+    height: 2.3rem;
+    background-color: #7F3326;
+    font-size: 15px;
+}
+section h1{
+    margin-top: 2rem;
+    color:white;
+    text-align: center;
+}
+#albums,#artists
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+section a{
+    align-self: flex-end;
+    text-decoration: none;
+    margin-right: 2rem;
+    color: rgb(120, 118, 118);
+    font-size: 20px;
+    border-bottom: 2px solid transparent; transition: border-bottom 0.8s ease,;
+}
+section a:hover{
+    border-bottom:2px solid white;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    flex-wrap: wrap;
+}
+.card{
+    width: 300px;
+    height: 450px;
+    background-color: black;
+    text-align: center;
+    border-radius: 2rem;
+    overflow: hidden; 
+    transition: all 0.3s ease;
+    
+}
+.card:hover{
+    /* box-shadow: 0 2px 6px rgba(72, 71, 71, 0.5); #221817;*/
+    box-shadow: 2px 2px 7px  #473331;
+    width: 310px;
+    height: 460px;
+}
+.card img{
+    width: 100%; 
+    height: auto;
+    border-radius: 2rem;
+}
+.card h2{
+    color: white;
+    margin-top: 10px;
+}
+.card p{
+    color: white;
+    padding: 1rem;
+}
+.card button{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 13px;
+}
+.card button:hover{
+    background-color: #AD5728;
+    font-size: 15px;
+    width: 6.2rem;
+    height: 2.2rem;
+    color: white;
+}
+/* artist */
+.container1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card1{
+    width: 300px;
+    height: 350px;
+    border-radius: 3rem;
+    text-align: center;
+}
+.card1 img{
+    margin-top: 2rem;
+    width: 240px;
+    height: auto;
+    border-radius: 10rem;
+    align-items: center;
+}
+.card1 h3{
+    color: white;
+    margin-top: 20px;
+}
+footer{
+    background-color: black;
+}
+.foot h1{
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    
+}
+.footer_cont{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.footer_cont h4{
+    color: white;
+}
+.footer_cont li{
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+}
+.footer_cont li a{
+    text-decoration: none;
+    color: rgb(117, 113, 113);
+    transition: 0.8s ease;
+}
+.footer_cont li a:hover{
+    color: white;
+}
+.copy{
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}

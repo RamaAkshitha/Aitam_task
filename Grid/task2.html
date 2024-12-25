@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    .container{
+        width: 900px;
+        height: 450px;
+        background-color: rgb(60, 108, 69);
+        display: grid;
+        grid-template-rows: repeat(3,100px);
+        grid-template-columns: repeat(3,200px);
+        row-gap: 1rem; column-gap: 1rem;
+        padding: 2rem;
+        justify-self: center;
+    }
+    .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10,.box11{
+        background-color: rgb(242, 241, 241);
+    }
+    .box1{
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .box2{
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .box3{
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+    .box4{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .box5{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .box6{
+        grid-row-start: 3;
+        grid-row-end: 6;
+    }
+    .box7,.box11{
+        grid-column-start: 3;
+        grid-column-end: end;
+    }
+    .box8{
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .box11{
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+        <div class="box7">7</div>
+        <div class="box8">8</div>
+        <div class="box9">9</div>
+        <div class="box10">10</div>
+        <div class="box11">11</div>
+    </div>
+</body>
+</html>
